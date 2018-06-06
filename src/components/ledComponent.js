@@ -3,26 +3,13 @@ const request = require('request');
 const axios = require('axios')
 
 const ledComponent = () => {
-    //
-    // const url = 'http://10.9.21.211:80/api/led/change'
-    //
-    // const opts = {
-    //     method: 'POST',
-    //     body: JSON.stringify({ red: 255,
-    //       blue: 0,
-    //       green: 0
-    //       }),
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       'Accept': 'application/json'
-    //     }
-    //   }
 
     const axios = require('axios')
 
     function changeColor(red, green, blue) {
       axios({
         url: 'http://10.9.21.211:80/api/led/change',
+        crossDomain: true,
         method: 'post',
         data: {
           red: red,
@@ -31,8 +18,6 @@ const ledComponent = () => {
         }
       })
     }
-
-    // changeColor()
 
     let red = 50
     let green = 150
@@ -59,13 +44,10 @@ const ledComponent = () => {
 
     }
 
-    // let myInterval = setInterval(discoParty, 1000)
-
-
+    let myInterval = setInterval(discoParty, 1000)
 
       const onClick = () => {
         console.log('hello');
-        // request.post(url, opts)
         discoParty()
       }
 
