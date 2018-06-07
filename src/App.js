@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import LedComponent from './components/ledComponent'
 import DiscoComponent from './components/discoComponent'
 import TextComponent from './components/textComponent'
 
-const request = require('request');
+
 
 class App extends Component {
   render() {

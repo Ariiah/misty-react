@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-const request = require('request');
 const axios = require('axios')
 
 const API = 'http://localhost:3000/led'
 
 const onClick = () => {
-  console.log('hello')
-    const response = fetch(API)
-  // changeColor()
+   fetch(API)
 }
 
 function changeColor() {
@@ -23,19 +20,8 @@ class LedComponent extends Component {
     }
   }
 
-  // async componentDidMount() {
-  //   try {
-  //     console.log('hi');
-  //     const response = await fetch(API)
-  //     console.log(response)
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // }
-
   render() {
-    return (
-      <div>
+    return (<div>
       <button onClick={onClick}>Lights!</button>
     </div>)
   }
