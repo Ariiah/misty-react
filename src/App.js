@@ -12,8 +12,8 @@ class App extends Component {
     <div>
       <h3>Miss Tea's Misty-cal Mist-er-y Movements</h3>
       <LedComponent />
-      <br></br>
       <DiscoComponent />
+      <br></br>
     </div>
 
     )

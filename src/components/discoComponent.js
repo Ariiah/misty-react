@@ -2,55 +2,52 @@ import React, { Component } from 'react';
 const request = require('request');
 const axios = require('axios')
 
-const disComponent = () => {
+const API = 'http://localhost:3000/disco'
 
-  function partyTime() {
-    axios({
-      url: 'http://10.9.21.211:80/api/audio/play',
-      method: 'post',
-      data: {
-        AssetId: "MrMeeseeks.wav"
-      }
-    })
+const onClick = () => {
+  console.log('hello');
+  partyTime()
+}
 
-    axios({
-      url: 'http://10.9.21.211:80/api/images/change',
-      method: 'post',
-      data: {
-        FileName: "mrmee.jpg"
-      }
-    })
 
+function partyTime() {
     axios({
-      url: 'http://10.9.21.211:80/api/drive/time',
-      method: 'post',
-      data: {
-        LinearVelocity: 0,
-        AngularVelocity: 100,
-        TimeMS: 5000
+      url: API,
+      crossDomain: true,
+      method: 'post'
+    })
+}
+
+
+class DisComponent extends Component {
+
+  constructor() {
+    super()
+      this.state = {
+        misty: []
       }
-    })
-    .then(()=>{
-      axios({
-        url: 'http://10.9.21.211:80/api/images/revert',
-        method: 'post'
-      })
-    })
   }
 
+  async componentDidMount() {
 
-        const onClick = () => {
-          console.log('hello');
-          // request.post(url, opts)
-          partyTime()
-        }
+    try {
+      console.log('hi');
+        const response = await fetch(API)
+        console.log(response);
+    }
+    catch(err) {
+        console.log(err);
+    }
+  }
 
-        return (
-          <div>
-            <button onClick={onClick}>PARTY TIME!!!</button>
-          </div>
-        )
+  render() {
+    return(
+      <div>
+        <button onClick={onClick}>Disco!</button>
+      </div>
+    )
+  }
 
 }
 
-export default disComponent
+export default DisComponent
