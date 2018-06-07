@@ -7,9 +7,9 @@ const onClick = () => {
    fetch(API)
 }
 
-function changeColor() {
-  axios({url: API, crossDomain: true, method: 'post'})
-}
+// function changeColor() {
+//   axios({url: API, crossDomain: true, method: 'post'})
+// }
 
 class LedComponent extends Component {
 
