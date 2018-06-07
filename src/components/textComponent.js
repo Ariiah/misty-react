@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 const request = require('request');
 const axios = require('axios')
 
-const API = 'http://localhost:3000/disco'
+const API = 'http://localhost:3000/tts'
 
 const onClick = () => {
-  console.log('hello');
+  // console.log('wheee');
+  // const message = Document.getElementById('.message').value()
+  // console.log(message);
   partyTime()
 }
+
 
 function partyTime() {
     axios({
@@ -17,7 +20,9 @@ function partyTime() {
     })
 }
 
-class DisComponent extends Component {
+
+class TextComponent extends Component {
+
   constructor() {
     super()
       this.state = {
@@ -38,13 +43,17 @@ class DisComponent extends Component {
   }
 
   render() {
+
     return(
       <div>
-        <button onClick={onClick}>Disco!</button>
+        <form>
+        What to say? <input type="text" name="speech" className="message" placeholder="Hello World" />
+        <input type="submit" value="Submit" onClick={onClick}/>
+        </form>
       </div>
     )
   }
 
 }
 
-export default DisComponent
+export default TextComponent
