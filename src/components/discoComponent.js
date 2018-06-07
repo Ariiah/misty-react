@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-const request = require('request');
 const axios = require('axios')
 
 const API = 'http://localhost:3000/disco'
 
 const onClick = () => {
-  console.log('hello');
-  partyTime()
+  fetch(API)
 }
 
 
@@ -26,18 +24,6 @@ class DisComponent extends Component {
       this.state = {
         misty: []
       }
-  }
-
-  async componentDidMount() {
-
-    try {
-      console.log('hi');
-        const response = await fetch(API)
-        console.log(response);
-    }
-    catch(err) {
-        console.log(err);
-    }
   }
 
   render() {
