@@ -38,7 +38,7 @@ class TextComponent extends Component {
     return(
       <div >
         <form>
-        What to say? <input type="text" name="speech" className="message" placeholder="Hello World" />
+        What to say? <input type="text" className="message" placeholder="Hello World" />
         <br></br>
         <br></br>
         <button type="submit" onClick={onClick}>Click Me!</button>
