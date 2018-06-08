@@ -36,9 +36,11 @@ class TextComponent extends Component {
   render() {
 
     return(
-      <div>
+      <div >
         <form>
         What to say? <input type="text" name="speech" className="message" placeholder="Hello World" />
+        <br></br>
+        <br></br>
         <button type="submit" onClick={onClick}>Click Me!</button>
         </form>
       </div>
