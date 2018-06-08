@@ -32,14 +32,6 @@ class TextComponent extends Component {
     })
   }
 
-  // onChange(e) {
-  //   e.preventDefault()
-  //
-  //   this.vol = document.getElementsByClassName('volume')[0].value
-  //   // console.log('vol', vol)
-  //
-  //   return vol
-  // }
 
   render() {
 

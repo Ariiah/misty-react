@@ -7,13 +7,6 @@ const onClick = () => {
   fetch(API)
 }
 
-// function partyTime() {
-//     axios({
-//       url: API,
-//       crossDomain: true,
-//       method: 'post'
-//     })
-// }
 
 class DisComponent extends Component {
   constructor() {
