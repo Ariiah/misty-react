@@ -7,10 +7,9 @@ class TextComponent extends Component {
     this.state = {
       misty: []
     }
-
   }
 
-  onClick(e){
+  onClick(e) {
     e.preventDefault()
 
     let msg = document.getElementsByClassName('message')[0].value
@@ -32,7 +31,6 @@ class TextComponent extends Component {
     })
   }
 
-
   render() {
 
     return (<div>
@@ -40,14 +38,13 @@ class TextComponent extends Component {
         What to say?
         <input type="text" className="message" placeholder="Hello World"/>
         <button type="submit" onClick={this.onClick}>Click Me!</button>
-        <br />
-        <br />
+        <br/>
+        <br/>
         Volume
         <input type='range' min='1' max='10' defaultValue='5' step='1' className='volume'/>
       </form>
     </div>)
   }
-
 }
 
 export default TextComponent

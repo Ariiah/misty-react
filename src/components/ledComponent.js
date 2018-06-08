@@ -2,16 +2,11 @@ import React, {Component} from 'react';
 import '../App.css';
 const axios = require('axios')
 
-
 const API = 'http://localhost:3000/led'
 
 const onClick = () => {
-   fetch(API)
+  fetch(API)
 }
-
-// function changeColor() {
-//   axios({url: API, crossDomain: true, method: 'post'})
-// }
 
 class LedComponent extends Component {
 
