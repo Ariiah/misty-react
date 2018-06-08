@@ -4,8 +4,6 @@ import LedComponent from './components/ledComponent'
 import DiscoComponent from './components/discoComponent'
 import TextComponent from './components/textComponent'
 
-
-
 class App extends Component {
   render() {
     return(

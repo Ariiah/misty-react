@@ -5,11 +5,13 @@ function yellow(red, yellow, blue) {
   axios({
     url: 'http://10.9.21.211:80/api/led/change',
     method: 'post',
-    data: { red: 0, green: 250, blue: 0 }
+    data: {
+      red: 0,
+      green: 250,
+      blue: 0
+    }
   })
 }
-
-// yellow()
 
 function discoParty() {
   let red = 0
