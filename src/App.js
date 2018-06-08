@@ -9,10 +9,12 @@ import TextComponent from './components/textComponent'
 class App extends Component {
   render() {
     return(
-    <div>
-      <h3>Miss Tea's Misty-cal Mist-er-y Movements</h3>
+    <div className={'center'}>
+      <h3>Misty's Movements</h3>
       <LedComponent />
+      <br></br>
       <DiscoComponent />
+      <br></br>
       <TextComponent />
       <br></br>
     </div>

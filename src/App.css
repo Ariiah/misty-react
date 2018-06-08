@@ -1,5 +1,24 @@
+body {
+  background: rgba(100,34,233,1);
+  background: -moz-linear-gradient(left, rgba(100,34,233,1) 0%, rgba(245,245,245,1) 100%);
+  background: -webkit-gradient(left bottom, right bottom, color-stop(0%, rgba(100,34,233,1)), color-stop(100%, rgba(245,245,245,1)));
+  background: -webkit-linear-gradient(bottom, rgba(100,34,233,1) 0%, rgba(245,245,245,1) 100%);
+  background: -o-linear-gradient(bottom, rgba(100,34,233,1) 0%, rgba(245,245,245,1) 100%);
+  background: -ms-linear-gradient(bottom, rgba(100,34,233,1) 0%, rgba(245,245,245,1) 100%);
+  background: linear-gradient(to top, rgba(100,34,233,1) 0%, rgba(245,245,245,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6422e9', endColorstr='#f5f5f5', GradientType=1 );
+
+  background-repeat: no-repeat;
+
+  background-size: 100% 1000px;
+}
+h3 {
+  text-align: center;
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -27,6 +46,50 @@
   to { transform: rotate(360deg); }
 }
 
-/* Button {
+button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #6522e9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
+
+button:hover {
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -ms-linear-gradient(top, #ffffff, #ffffff);
+  background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+  text-decoration: none;
+  color: #6522e9;
+}
+
+div {
+  margin: auto;
+  width: 50%
+}
+/*
+button {
+  background: #6600ED;
+color: #fff;
+outline: none;
+  display: inline-block;
+  border-radius: 100px;
+  font-size: 16px;
+  padding: 20px 40px 21px 40px;
+  border: 2px solid transparent;
+  transition: border 400ms ease, background-color 400ms ease, color 400ms ease;
+  min-width: 160px;
+  text-align: center;
+  font-family: 'Basis-Grotesque-Bold', sans-serif;
+  cursor: pointer;
 } */

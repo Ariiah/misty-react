@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import '../App.css';
 const axios = require('axios')
+
 
 const API = 'http://localhost:3000/led'
 
